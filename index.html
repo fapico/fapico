@@ -13,13 +13,14 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Fapico - Home</title>
+    <link rel="icon" href="public/Images/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <header class="section-navbar">
       <section class="top_txt">
         <div class="head container">
           <div class="marquee">
-            <p>Clean. Safe. Pest-free. All your cleaning and pest control needs under one roof.</p>
+            <p>Clean. Safe. Pest-Free. Deep Cleaning Services, General Cleaning & Pest Control — All Your Needs Under One Roof. Call Us: <a href="tel:+91-8700828054">+91-8700828054</a></p>
           </div>
         </div>
       </section>
@@ -36,7 +37,8 @@
             <p>Fapico</p>
           </a>
         </div>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
+          <span class="close-menu" id="close-menu">&times;</span>
           <ul>
             <li class="nav-items">
               <a href="/index.html" class="nav-link">Home</a>
@@ -54,28 +56,35 @@
             </li>
           </ul>
         </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
     </header>
 
-    <!-- Hero Section -->
     <main>
       <section class="section-hero">
-        <div class="container grid grid-two--cols">
-          <div class="section-hero--content">
-            <p class="hero-subheading">“Say Goodbye to Unwanted Guests!”</p>
-            <h1 class="hero-heading">Your Trusted Partner in Pest Control!</h1>
-            <p class="hero-para">
-              Welcome to Fapico, we provide reliable pest control solutions for homes and offices, keeping your spaces safe and pest-free all year round. Alongside pest control, we offer a complete range of professional cleaning services — from deep home cleaning to sofa and upholstery care — so you can enjoy a cleaner, healthier environment without the hassle.
-            </p>
-            <div class="hero-btn">
-              <a href="/trending.html" class="btn">Explore Our Services</a>
-            </div>
+        <div class="slideshow-container-fullscreen">
+          <div class="mySlides fade">
+            <img src="public/Images/First.png" alt="Fapico Services 1">
           </div>
-          <div class="section-hero-image" data-aos="fade-up" data-aos-delay="600">
-            <figure>
-              <img src="public/Images/Banner.jpeg" alt="Fapico Services" />
-            </figure>
+
+          <div class="mySlides fade">
+            <img src="public/Images/Second.png" alt="Fapico Services 2">
           </div>
+
+          <div class="mySlides fade">
+            <img src="public/Images/Third.png" alt="Fapico Services 3">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="public/Images/Fourth.png" alt="Fapico Services 4">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="public/Images/Fifth.png" alt="Fapico Services 5">
+          </div>
+          
         </div>
         <div class="custom-shape-divider-bottom-1696038172">
           <svg
@@ -103,7 +112,6 @@
       </section>
     </main>
 
-    <!-- Extra Product Section -->
     <section class="section-extra-product">
       <div class="container grid grid-three--cols">
         <div class="div-extra grid grid-two--cols">
@@ -139,7 +147,6 @@
       </div>
     </section>
 
-    <!-- Policy Section -->
     <section class="section-policy">
       <div class="container grid grid-four--cols">
         <div class="div-policy">
@@ -181,18 +188,102 @@
       </div>
     </section>
 
-    <!--Checkout our services-->
+    <section class="section-locations">
+  <div class="container">
+    <h2 class="section-common--heading">Currently Serving</h2>
+    <div class="locations-container">
+      
+      <div class="location-card">
+        <img
+          src="public/location/gurgaon.jpg"
+          alt="Gurgaon Icon"
+          class="location-icon-img"
+        />
+        <p class="location-name">Gurgaon</p>
+      </div>
+
+      <div class="location-card coming-soon">
+        <div class="status-badge">Coming Soon</div>
+        <img
+          src="public/location/jaipur.png"
+          alt="Jaipur Icon"
+          class="location-icon-img"
+        />
+        <p class="location-name">Jaipur</p>
+      </div>
+
+      <div class="location-card coming-soon">
+        <div class="status-badge">Coming Soon</div>
+        <img
+          src="public/location/delhi.jpg"
+          alt="Delhi Icon"
+          class="location-icon-img"
+        />
+        <p class="location-name">Delhi</p>
+      </div>
+
+      <div class="location-card">
+        <img
+          src="public/location/udaipur.jpg"
+          alt="Udaipur Icon"
+          class="location-icon-img"
+        />
+        <p class="location-name">Udaipur</p>
+      </div>
+
+      <div class="location-card coming-soon">
+        <div class="status-badge">Coming Soon</div>
+        <img
+          src="public/location/mumbai.jpg"
+          alt="Mumbai Icon"
+          class="location-icon-img"
+        />
+        <p class="location-name">Mumbai</p>
+      </div>
+
+      <div class="location-card coming-soon">
+        <div class="status-badge">Coming Soon</div>
+        <img
+          src="public/location/chennai.png"
+          alt="Chennai Icon"
+          class="location-icon-img"
+        />
+        <p class="location-name">Chennai</p>
+      </div>
+
+      <div class="location-card coming-soon">
+        <div class="status-badge">Coming Soon</div>
+        <img
+          src="public/location/agra.jpg"
+          alt="Agra Icon"
+          class="location-icon-img"
+        />
+        <p class="location-name">Agra</p>
+      </div>
+
+      <div class="location-card coming-soon">
+        <div class="status-badge">Coming Soon</div>
+        <img
+          src="public/location/kolkata.jpg"
+          alt="Kolkata Icon"
+          class="location-icon-img"
+        />
+        <p class="location-name">Kolkata</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
     <section class="section-product">
   <div class="container">
     <h2 class="section-common--heading">Checkout Our Services</h2>
     <div id="productContainer">
-      <!-- Fallback content -->
       <p class="fallback-message">Loading services... If content does not appear, please check your connection or contact support.</p>
     </div>
   </div>
 </section>
 
-    <!-- Product Template -->
     <template id="productTemplate">
   <div class="cards">
     <article class="information card">
@@ -223,7 +314,6 @@
   </div>
 </template>
 
-    <!-- Why Choose Us Section -->
     <section class="section-why--choose">
       <div class="container">
         <h2 class="section-common--heading">Why Choose Us</h2>
@@ -272,7 +362,7 @@
             <p class="common-text--highlight">5</p>
             <h3 class="section-common--title">Convenience</h3>
             <p>
-              With Fapico, finding the right services for you is easy and convenient. Our user-friendly website ensures a seamless experience in browsing, all from the comfort of your home.
+              With Fapico, finding the right services for you is easy and convenient. Our user-friendly website ensures a seamless experience in Browse, all from the comfort of your home.
             </p>
           </div>
           <div class="why-choose--div" data-aos="zoom-in-up" data-aos-delay="600">
@@ -286,11 +376,11 @@
       </div>
     </section>
 
-    <!-- Footer Section -->
     <footer class="section-footer">
       <script type="module" src="footer.js"></script>
     </footer>
 
     <script type="module" src="main.js"></script>
-  </body>
+    <script src="slideshow.js"></script>
+    <script src="navbarToggle.js"></script> </body>
 </html>
