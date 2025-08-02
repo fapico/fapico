@@ -1,13 +1,14 @@
 import { showProductContainer } from "./homeProductCard.js";
-import { showTrendingProductContainer } from "./trendingProducts.js";
+import { showPestControlContainer } from "./pestControlCard.js";
 
-// ✅ Use fetch instead of import
-fetch("./public/api/products.json")
+// Fetch and display Cleaning Services for the homepage
+fetch("./public/api/cleaningServices.json")
   .then((res) => res.json())
   .then(showProductContainer)
-  .catch(console.error);
+  .catch((error) => console.error("Error fetching cleaning services:", error));
 
-fetch("./public/api/trending.json")
+// Fetch and display Pest Control Services for the homepage
+fetch("./public/api/pestControlServices.json")
   .then((res) => res.json())
-  .then(showTrendingProductContainer)
-  .catch(console.error);
+  .then(showPestControlContainer)
+  .catch((error) => console.error("Error fetching pest control services:", error));a
