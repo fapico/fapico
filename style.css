@@ -1,3 +1,312 @@
+.services{
+  background: #fff;
+}
+
+/* Testinomial */
+.review-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px 0;
+      scroll-behavior: smooth;
+    }
+
+    .review-slider::-webkit-scrollbar {
+      display: none; /* Hide scrollbar */
+    }
+
+    .review-slider img {
+      height: 400px;
+      border-radius: 12px;
+      flex-shrink: 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+.navbar-brand1 {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Start : Video  */
+.fapico-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 16px;
+  padding: 20px 0 20px 0px; 
+}
+
+.fapico-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.fapico-video-wrapper {
+  position: relative;
+  flex: 0 0 auto;
+  width: 300px;
+  height: 500px;
+  scroll-snap-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+}
+
+.fapico-video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fapico-mute-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* End : Video */
+/* Trial : Start */
+.fapico-service-scroll-section {
+  max-width: 1420px; /* match container width */
+  margin: 0 auto;    /* center it */
+  padding: 3.2rem 2.4rem; /* same as .container */
+  animation: slideIn 0.8s ease-out; /* optional, matches container animation */
+  background-color: #fff;
+  overflow: visible; /* prevent clipping on hover */
+}
+
+
+.fapico-service-scroll-heading {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.fapico-service-scroll-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.fapico-service-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.fapico-service-card {
+  flex: 0 0 auto;
+  width: 140px;
+  height: 130px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center center; /* ensures scaling doesn't push it out */
+}
+
+.fapico-service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* brings hovered card above others */
+}
+
+.fapico-service-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+}
+
+.fapico-service-card p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+}
+
+
+/* Trial : End */
+/* Start : CSS for Currently Serving */
+.locations-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.locations-scroll-wrapper {
+  overflow-x: hidden;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.locations-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.locations-cards-container {
+  display: flex;
+  gap: 20px;
+  animation: locations-scroll-left 40s linear infinite;
+  width: max-content;
+  padding: 10px 0;
+}
+
+.locations-card {
+  flex: 0 0 auto;
+  width: 150px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.locations-card:hover {
+  transform: scale(1.05);
+}
+
+.locations-icon-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.locations-name {
+  font-size: 1rem;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.locations-coming-soon {
+  opacity: 0.5;
+}
+
+.locations-coming-soon .locations-status-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #f39c12;
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+@keyframes locations-scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* END : CSS for Currently Serving */
+
+/* START: SERVICES SECTION */
+.fapico-services-section {
+  background: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.fapico-services-heading {
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.fapico-scroller-wrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+.fapico-scroller-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.fapico-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fapico-card {
+  flex: 0 0 auto;
+  width: 280px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 16px;
+  transition: transform 0.3s ease;
+}
+
+.fapico-card:hover {
+  transform: translateY(-5px);
+}
+
+.fapico-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.fapico-card-title {
+  margin-top: 14px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .fapico-card {
+    width: 220px;
+  }
+
+  .fapico-card img {
+    height: 150px;
+  }
+
+  .fapico-card-title {
+    font-size: 16px;
+  }
+}
+
+/* END : SERVICES SECTION */
 /* Global Reset */
 * {
   margin: 0;
@@ -17,7 +326,7 @@
   --buttonColor: #2a2c30;
   --secondaryColor: #3a3e44;
   --borderColor: #e3eaf0;
-  --backgroundColor: #f7f7f7;
+  --backgroundColor: white;
   --backgroundSecondary: #fefefe;
   --textColor: #1e1f23;
   --anchorColor: white;
@@ -34,7 +343,7 @@ html {
 
 body {
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 0rem;
   min-width: 320px;
   background-color: var(--backgroundColor);
   animation: fadeIn 1s ease-in;
@@ -66,7 +375,7 @@ h2 { font-size: 3.2rem; }
 p, li, a, label {
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
-  color: var(--textColor);
+  color: white;
   line-height: 1.5;
   font-weight: 600;
   font-family: "Urbanist", sans-serif;
@@ -220,10 +529,9 @@ a:focus-visible {
 }
 
 .navbar-brand img {
-  max-width: 50px;
+  width: 120px;
   height: auto;
   margin-right: 10px;
-  border: 2px solid var(--main-color);
   transition: transform 0.3s ease;
 }
 
@@ -337,16 +645,49 @@ main {
   height: auto;
 }
 
-.mySlides img {
+.mySlides {
   width: 100%;
-  height: auto;
-  object-fit: contain;
-  object-position: center;
-  filter: brightness(0.7) contrast(1.05);
-  transition: opacity 1.5s ease-in-out;
-  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
+.mySlides img {
+  width: 90%;                /* Decrease width from 100% to 90% */
+  height: auto;
+  max-width: 900px;          /* Prevents image from being too large on large screens */
+  object-fit: contain;       /* Or use "cover" if you want full coverage */
+  object-position: center;
+  /* filter: brightness(0.7) contrast(1.05); */
+  transition: opacity 1.5s ease-in-out;
+  display: block;
+  
+  margin: auto auto;            /* Center the image horizontally */
+  border-radius: 16px;       /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.slider-padding {
+  padding-top: 10px;
+}
+
+@media (max-width: 980px) {
+  .mySlides img {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .mySlides img {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .mySlides img {
+    margin-bottom: 0;
+  }
+}
 .fade {
   animation-name: fade;
   animation-duration: 2s;
@@ -705,6 +1046,10 @@ main {
 }
 
 /* Locations Section */
+.locations-card p{
+  color: #000;
+  font-size: medium;
+}
 .section-locations {
   padding-top: 0;
 }
@@ -916,137 +1261,106 @@ footer {
 }
 
 /* Product Containers */
-#productContainer, #pestControlContainer, #trendingProductContainer {
+#productContainer, #trendingProductContainer, #pestProductContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 3.2rem;
-  padding: 2rem 0;
+  gap: 4.8rem;
+}
+
+#productContainer, #pestProductContainer {
+  /* This forces 4 columns for both cleaning and pest services on large screens */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#trendingProductContainer {
+  /* This uses the auto-fill layout for trending services */
+  grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
+}
+
+#productContainer .information, #trendingProductContainer .information, #pestProductContainer .information {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
 }
 
 .cards {
-  background-color: var(--backgroundSecondary);
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
   display: flex;
-  flex-direction: column;
-  height: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 36rem;
+  padding: 1.6rem;
+  margin: 1.8vh auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--backgroundSecondary);
 }
 
 .cards:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-}
-
-.information.card {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  flex-grow: 1;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .category {
   background-color: var(--main-color);
-  color: var(--backgroundSecondary);
-  padding: 0.5rem 1.5rem;
-  font-size: 1.4rem;
-  border-radius: 2rem;
-  align-self: flex-start;
+  padding: 0.3rem 1.2rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  border-radius: 10rem;
+  transition: background-color 0.3s ease;
   font-weight: 600;
+  font-family: "Urbanist", sans-serif;
 }
 
-.imageContainer {
-  width: 100%;
-  height: 20rem;
-  overflow: hidden;
-  border-radius: 0.8rem;
+.category:hover {
+  background-color: var(--buttonColor);
+  color: var(--backgroundSecondary);
 }
 
 .productImage {
   width: 100%;
-  height: 100%;
+  max-width: 32rem;
+  max-height: 32rem;
   object-fit: cover;
   border: 2px solid var(--main-color);
-  transition: transform 0.3s ease;
+  filter: brightness(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .productImage:hover {
   transform: scale(1.05);
-}
-
-.productName {
-  font-size: 2.2rem;
-  color: var(--textColor);
-  margin: 0.8rem 0;
-  font-family: "Jost", sans-serif;
+  filter: brightness(1.2);
 }
 
 .productRating {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  font-size: 1.8rem;
+  gap: 5px;
   color: #FFC107;
-  font-size: 1.6rem;
 }
 
 .customerNumber {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--secondaryColor);
 }
 
-.productDescription {
-  font-size: 1.6rem;
-  color: var(--secondaryColor);
-  line-height: 1.6;
-  flex-grow: 1;
-}
-
-.productStock {
-  font-size: 1.6rem;
-  color: var(--textColor);
-}
-
-.productPriceElement {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin: 1rem 0;
-}
-
-.productPrice {
-  font-size: 2rem;
-  color: var(--textColor);
-  font-weight: 700;
-}
-
-.productActualPrice {
-  font-size: 1.6rem;
-  color: var(--secondaryColor);
-  text-decoration: line-through;
-}
-
-.more-details-btn {
-  align-self: stretch;
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 1rem;
-  background-color: var(--main-color);
-  color: var(--backgroundSecondary);
-  border-radius: 0.6rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.more-details-btn:hover {
-  background-color: var(--buttonColor);
-  transform: translateY(-2px);
-}
-
-.productQuantityElement, .productStockElement {
+.productPriceElement, .productQuantityElement, .productStockElement {
   display: flex;
   gap: 2rem;
   align-items: center;
   text-align: center;
+}
+
+.productPriceElement { margin: 0.8rem 0; }
+
+.productProperty, .productDescription, .productStock {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Urbanist", sans-serif;
 }
 
 .stockElement {
@@ -1183,6 +1497,16 @@ footer {
   font-weight: 600;
   font-family: "Urbanist", sans-serif;
 }
+
+.productRating { color: #FFC107; }
+
+.productPrice, .productActualPrice {
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: "Urbanist", sans-serif;
+}
+
+.productActualPrice { text-decoration: line-through; }
 
 .productCartTotalElem {
   display: flex;
@@ -1483,6 +1807,14 @@ footer {
   white-space: nowrap;
   margin-top: 4.8rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.logo-slider-wrapper {
+  margin: 0 0px; /* permanent space left & right */
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
 }
 
 .section-client-logos .section-common--heading {
@@ -1496,22 +1828,20 @@ footer {
   display: flex;
   align-items: center;
   animation: scrollLogos 25s linear infinite;
+  padding: 0 6rem; /* keeps 6rem margin on both sides */
+  box-sizing: border-box;
 }
 
-/************ CORRECTED CODE STARTS HERE ************/
 .client-logo-slideshow img {
   height: 80px;
   margin: 0 2rem;
   object-fit: contain;
-  filter: none; /* Ensures no grayscale or other filters are applied */
-  mix-blend-mode: normal; /* Ensures correct color blending */
-  transition: transform 0.3s ease;
+  transition: filter 0.3s ease;
 }
 
 .client-logo-slideshow img:hover {
-  transform: scale(1.05); /* Optional: Adds a nice hover effect */
+  filter: grayscale(0%) brightness(1);
 }
-/************ CORRECTED CODE ENDS HERE ************/
 
 @keyframes scrollLogos {
   0% { transform: translateX(0); }
@@ -1566,125 +1896,6 @@ footer {
 @keyframes scrollTestimonials {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
-}
-
-/* Modal Styles for Service Details */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.6);
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-
-.modal-content {
-  background-color: var(--backgroundSecondary);
-  margin: auto;
-  padding: 2.5rem;
-  border-radius: 1rem;
-  width: 100%;
-  max-width: 50rem;
-  max-height: 90vh;
-  overflow-y: auto;
-  position: relative;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 0.3s ease-in;
-}
-
-.close-modal-btn {
-  position: absolute;
-  top: 1rem; /* Adjusted to move up */
-  right: 2.5rem; /* Moved further right to avoid image overlap */
-  font-size: 3rem; /* Slightly larger for prominence */
-  color: #e74c3c; /* Brighter red for better visibility */
-  font-weight: 700; /* Bold */
-  cursor: pointer;
-  background-color: var(--backgroundSecondary); /* White background */
-  border-radius: 50%; /* Circular shape */
-  width: 4rem; /* Fixed width */
-  height: 4rem; /* Fixed height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
-}
-
-.close-modal-btn:hover {
-  color: #c0392b; /* Darker red on hover */
-  background-color: #f4f4f4; /* Slightly darker background on hover */
-  transform: scale(1.1); /* Scale up on hover */
-}
-
-.modal-header {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.modal-img {
-  width: 100%;
-  height: 20rem;
-  object-fit: cover;
-  border-radius: 0.8rem;
-  border: 2px solid var(--main-color);
-}
-
-.modal-header-text h2 {
-  font-size: 2.4rem;
-  color: var(--textColor);
-  margin: 0;
-}
-
-.modal-header-text p {
-  font-size: 1.6rem;
-  color: var(--secondaryColor);
-}
-
-.modal-body h3 {
-  font-size: 2rem;
-  color: var(--main-color);
-  margin-bottom: 1rem;
-}
-
-.modal-body p {
-  font-size: 1.6rem;
-  color: var(--secondaryColor);
-  line-height: 1.6;
-}
-
-.modal-price-stock {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  margin: 1.5rem 0;
-}
-
-.modal-price-stock p {
-  font-size: 1.6rem;
-  color: var(--textColor);
-}
-
-.modal-footer {
-  text-align: right;
-}
-
-.modal-footer .btn {
-  font-size: 1.6rem;
-  padding: 1rem 2rem;
-  background-color: #28a745;
-}
-
-.modal-footer .btn:hover {
-  background-color: #218838;
 }
 
 /* Responsive adjustments for testimonials slideshow */
@@ -1787,7 +1998,7 @@ footer {
   }
   .slideshow-container-fullscreen {
     min-height: 60vh;
-    max-height: 100vh;
+    max-height: 60vh;
   }
 }
 
@@ -1823,9 +2034,14 @@ footer {
 
 @media (max-width: 980px) {
   body {
-    padding: 0 0.6rem;
+    /* padding: 0 0.6rem; */
+  }
+  .section-products #productContainer, .section-products #trendingProductContainer, .section-products #pestProductContainer {
+    grid-template-columns: repeat(2, minmax(33%, 1fr));
   }
   .slideshow-container-fullscreen {
+    padding: 0 0.6rem;
+    padding-bottom: 0.6rem;
     min-height: 40vh;
   }
   footer {
@@ -1856,8 +2072,8 @@ footer {
   .slideshow-container-fullscreen {
     min-height: 35vh;
   }
-  #productContainer, #pestControlContainer, #trendingProductContainer {
-    grid-template-columns: 1fr;
+  .section-products #productContainer, .section-products #trendingProductContainer, .section-products #pestProductContainer {
+    grid-template-columns: repeat(1, minmax(33%, 1fr));
   }
   #productCartContainer .card {
     grid-template-columns: 0.5fr 0.1fr repeat(2, 1fr);
@@ -1992,7 +2208,7 @@ footer {
     font-size: 2rem;
   }
   .navbar-brand img {
-    max-width: 40px;
+    max-width: 120px;
   }
   .menu-toggle {
     font-size: 2.4rem;
@@ -2009,101 +2225,15 @@ footer {
     margin: 0 1rem;
   }
   .section-client-logos .section-common--heading {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     margin-bottom: 2rem;
   }
-  .modal-content {
-    max-width: 90%;
-    padding: 2rem;
-  }
-  .modal-img {
-    height: 15rem;
-  }
 }
 
-.fapico-scroll-container {
-  display: flex;
-  justify-content: center;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  gap: 16px;
-  padding: 20px 0 20px 20px; /* top right bottom left */
+.fapico-horizontal-reels-section {
+  background-color: #dfe1ff;
 }
 
-.fapico-scroll-container::-webkit-scrollbar {
-  display: none;
-}
-
-.fapico-video-wrapper {
-  position: relative;
-  flex: 0 0 auto;
-  width: 250px;
-  height: 420px;
-  scroll-snap-align: center;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #000;
-  margin: 0 auto;
-}
-
-.fapico-video-wrapper video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.fapico-mute-btn {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  border: none;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-/* Mobile View Optimization (max-width: 768px) */
-@media (max-width: 768px) {
-  .fapico-scroll-container {
-    padding: 15px 0 15px 10px; /* Reduced padding for tighter layout */
-    gap: 10px; /* Reduced gap between videos */
-    justify-content: flex-start; /* Allow horizontal scroll with centered items */
-  }
-
-  .fapico-video-wrapper {
-    width: 180px; /* Further reduced width for mobile */
-    height: 300px; /* Adjusted height to maintain aspect ratio */
-    border-radius: 8px; /* Slightly smaller radius for mobile */
-    margin: 0 5px; /* Small margin for spacing */
-  }
-
-  .fapico-video-wrapper video {
-    object-fit: contain; /* Switch to contain to avoid cropping on small screens */
-  }
-
-  .fapico-mute-btn {
-    bottom: 8px; /* Reduced bottom padding */
-    right: 8px; /* Reduced right padding */
-    padding: 6px 10px; /* Smaller padding for button */
-    font-size: 12px; /* Smaller font size */
-    border-radius: 15px; /* Adjusted radius */
-  }
-}
-
-/* Extra Small Devices (max-width: 480px) */
-@media (max-width: 480px) {
-  .fapico-video-wrapper {
-    width: 150px; /* Even smaller for very small screens */
-    height: 250px; /* Adjusted height */
-  }
-
-  .fapico-mute-btn {
-    padding: 5px 8px; /* Further reduced padding */
-    font-size: 10px; /* Smaller font */
-    border-radius: 12px; /* Adjusted radius */
-  }
+.locations-section{
+  background-color: #dfe1ff;
 }

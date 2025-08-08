@@ -19,7 +19,7 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
 
   // Call showSlides again after a delay (e.g., 5000ms = 5 seconds)
-  setTimeout(showSlides, 3000);
+  setTimeout(showSlides, 5000);
 }
 
 // Start the slideshow when the script loads

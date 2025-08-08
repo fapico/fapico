@@ -1,14 +1,23 @@
-import { showProductContainer } from "./homeProductCard.js";
-import { showPestControlContainer } from "./pestControlCard.js";
+// main.js
 
-// Fetch and display Cleaning Services for the homepage
-fetch("./public/api/cleaningServices.json")
+import { showProductContainer } from "./homeProductCard.js";
+import { showTrendingProductContainer } from "./trendingProducts.js";
+import { showPestProductContainer } from "./pestProduct.js"; // Import the new file
+
+// Fetch and display cleaning services
+fetch("./public/api/products.json")
   .then((res) => res.json())
   .then(showProductContainer)
-  .catch((error) => console.error("Error fetching cleaning services:", error));
+  .catch(console.error);
 
-// Fetch and display Pest Control Services for the homepage
-fetch("./public/api/pestControlServices.json")
+// Fetch and display trending services
+fetch("./public/api/trending.json")
   .then((res) => res.json())
-  .then(showPestControlContainer)
-  .catch((error) => console.error("Error fetching pest control services:", error));a
+  .then(showTrendingProductContainer)
+  .catch(console.error);
+  
+// Fetch and display pest services
+fetch("./public/api/pest.json")
+  .then((res) => res.json())
+  .then(showPestProductContainer)
+  .catch(console.error);

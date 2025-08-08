@@ -2,17 +2,24 @@ const trendingProductsContainer = document.querySelector('#trendingProductContai
 const trendingProductTemplate = document.querySelector('#trendingProductTemplate');
 
 export const showTrendingProductContainer = (products) => {
+  console.log('Products:', products);
   if (!products || !trendingProductsContainer || !trendingProductTemplate) {
-    console.error('Error: Missing products, container, or template');
-    return;
+    console.error('Error: Missing products, container, or template', {
+      products,
+      trendingProductsContainer,
+      trendingProductTemplate
+    });
+    return false;
   }
 
   trendingProductsContainer.innerHTML = ''; // Clear existing content
 
-  products.forEach((currProd) => {
-    const { category, description, image, name, customerNumber } = currProd;
+  products.forEach((currProd, index) => {
+    console.log(`Processing product ${index}:`, currProd);
+    const { category, description, id, image, name, price, customerNumber, stock } = currProd;
 
     const productClone = document.importNode(trendingProductTemplate.content, true);
+    console.log('Cloned template:', productClone);
 
     productClone.querySelector('.productName').textContent = name;
     productClone.querySelector('.productImage').src = image || '/public/Images/placeholder.jpg';
