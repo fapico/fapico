@@ -1,242 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pest Control in Gurgaon | Fapico</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.6;
-      background-color: #f7f7f7;
-      color: #333;
-    }
-    header {
-      background: url(Banner.jpeg) center/cover no-repeat;
-      height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      padding: 20px;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      background: rgba(0,0,0,0.5);
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .btn-primary {
-      margin-top: 20px;
-      display: inline-block;
-      background-color: #1e90ff;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .section-title {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-around;
-    }
-    .feature-card {
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      width: 250px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    .feature-card img {
-      height: 60px;
-      margin-bottom: 10px;
-    }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .service {
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    .testimonials {
-      background: #e8f4ff;
-      padding: 40px 20px;
-    }
-    .testimonial-slider {
-      max-width: 700px;
-      margin: auto;
-      text-align: center;
-    }
-    .testimonial-slider p {
-      font-style: italic;
-      margin-bottom: 10px;
-    }
-    .pricing {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-    .price-card {
-      background: white;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 30px;
-      width: 280px;
-      text-align: center;
-    }
-    .price-card h3 {
-      margin-bottom: 10px;
-    }
-    .price-card ul {
-      text-align: left;
-      list-style: none;
-      padding-left: 0;
-    }
-    .price-card ul li::before {
-      content: "✓ ";
-      color: green;
-      font-weight: bold;
-    }
-    footer {
-      background-color: #111;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Pest Control Service in Gurgaon</title>
+    <link rel="icon" href="../public/Images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="section-navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="/index.html">
+            <img
+              src="../logo_fapico.png"
+              alt="Fapico Logo"
+              class="logo1"
+              width="80%"
+              height="auto"
+            />
+            
+          </a>
+        </div>
+        <nav class="navbar" id="navbar">
+          <span class="close-menu" id="close-menu">&times;</span>
+          <ul>
+            <li class="nav-items">
+              <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-items">
+              <a href="/about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-items">
+              <a href="/contact.html" class="nav-link">Contact</a>
+            </li>
+            <!-- <li class="nav-items">
+              <a href="/trending.html" class="nav-link add-to-cart-button" id="cartValue">
+                <i class="fa-sharp fa-solid fa-arrow-trend-up"> Trending</i>
+              </a>
+            </li> -->
+          </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
-</head>
-<body>
+    <main>
+      <section class="section-hero">
+        <div class="slider-padding">
+        <div class="slideshow-container-fullscreen">
+          <div class="mySlides fade">
+            <img src="../Images/Banner/fapico_bad_bugs_control.png" alt="bad_bugs_control">
+          </div>
+          <div class="mySlides fade">
+            <img src="../Images/Banner/fapico_cockroach_control.png" alt="cockroach_control">
+          </div>
+          <div class="mySlides fade">
+            <img src="../Images/Banner/fapico_mole_control.png" alt="mole_control">
+          </div>
+          <div class="mySlides fade">
+            <img src="../Images/Banner/fapico_rodent_control.png" alt="rodent_control">
+          </div>
+          <div class="mySlides fade">
+            <img src="../Images/Banner/fapico_termite_extermination_control.png" alt="termite_extermination_control">
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
+    
+    <section class="services">
+    <!-- SERVICES : 1 Cleaning Services -->
+    <section class="fapico-service-scroll-section">
+      <h2 class="section-common--headings">Why Fapico</h2>
+  <div class="fapico-service-scroll-container">
+    
+      <div class="fapico-service-card" >
+        <img src="../Images/Icons/fapico_warranty.png" alt="1 BHK">
+        <p>2 Months Warranty</p>
+      </div>
+      <div class="fapico-service-card">
+      <img src="../Images/Icons/fapico_govt_approved.png" alt="2 BHK">
+      <p>Govt. Approved</p>
+      </div>
+      <div class="fapico-service-card">
+        <img src="../Images/Icons/fapico_customers.png" alt="3 BHK">
+        <p>1000+ satisfied customers</p>
+      </div>
+      <div class="fapico-service-card">
+        <img src="../Images/Icons/fapico_experience.png" alt="4 BHK">
+        <p>5+ Years of Experience</p>
+      </div>
+      <div class="fapico-service-card">
+        <img src="../Images/Icons/fapico_staff.png" alt="5 BHK">
+        <p>Trained Staff</p>
+      </div>
+  </div>
+</section>
+    
+</section>
 
-  <header>
-    <div>
-      <h1>Pest Control Services in Gurgaon<br>Safe. Affordable. Trusted.</h1>
-      <a href="#pricing" class="btn-primary">Book Now</a>
+<section class="fapico-horizontal-reels-section">
+  <div class="container">
+  <h2 class="section-common--heading">Behind the Scenes</h>
+  <div class="fapico-scroll-container">
+    <div class="fapico-video-wrapper">
+      <video src="https://res.cloudinary.com/dqhg7otp9/video/upload/v1754823371/VN20250810_161918_migevk.mp4" autoplay muted loop playsinline></video>
+      <button class="fapico-mute-btn">Unmute</button>
     </div>
-  </header>
+    <div class="fapico-video-wrapper">
+      <video src="https://res.cloudinary.com/durguiwbn/video/upload/v1754072401/fapico_link_ywai0u.mp4" autoplay muted loop playsinline></video>
+      <button class="fapico-mute-btn">Unmute</button>
+    </div>
+    <div class="fapico-video-wrapper">
+      <video src="https://res.cloudinary.com/durguiwbn/video/upload/v1754072736/fapico_video_2_xgvtk8.mp4" autoplay muted loop playsinline></video>
+      <button class="fapico-mute-btn">Unmute</button>
+    </div>
+  </div>
+  </div>
+</section>
 
-  <section>
-    <h2 class="section-title">Why Choose Us?</h2>
-    <div class="features">
-      <div class="feature-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/159/159604.png" alt="Certified">
-        <h4>Govt. Certified</h4>
-        <p>Fully licensed and eco-friendly chemicals.</p>
-      </div>
-      <div class="feature-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2947/2947992.png" alt="Technicians">
-        <h4>Expert Technicians</h4>
-        <p>Experienced team with 5+ years of expertise.</p>
-      </div>
-      <div class="feature-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2947/2947982.png" alt="Fast Service">
-        <h4>Same-Day Service</h4>
-        <p>We respond quickly across Gurgaon.</p>
+<section class="section-client-logos">
+  <div class="container">
+    <h2 class="section-common--heading">Proudly Serving</h2>
+    <div class="logo-slider-wrapper">
+      <div class="client-logo-slideshow">
+        <img src="../public/Serving/oracle_1.png" alt="Client Logo 1" />
+        <img src="../public/Serving/samsung_2.png" alt="Client Logo 2" />
+        <img src="../public/Serving/veeba_3.png" alt="Client Logo 3" />
+        <img src="../public/Serving/dlf_4.png" alt="Client Logo 4" />
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <h2 class="section-title">Our Pest Control Services</h2>
-    <div class="services-grid">
-      <div class="service">
-        <h4>Termite Control</h4>
-        <p>Long-term protection against termite infestations.</p>
-      </div>
-      <div class="service">
-        <h4>Cockroach Control</h4>
-        <p>Safe and odorless treatments with warranty.</p>
-      </div>
-      <div class="service">
-        <h4>Rodent Control</h4>
-        <p>Get rid of rats and mice from homes or kitchens.</p>
-      </div>
-      <div class="service">
-        <h4>Bed Bug Treatment</h4>
-        <p>Complete removal with follow-up sessions.</p>
+    <section class="section-testimonials">
+      <div class="container">
+        <h2 class="section-common--heading">What Our Customers Say</h2>
+        <div class="card reviews">
+      <div class="review-slider">
+        <img src="../public/testimonials/r1.jpeg" alt="Review 1">
+        <img src="../public/testimonials/r2.jpeg" alt="Review 2">
+        <img src="../public/testimonials/r3.jpeg" alt="Review 3">
+        <img src="../public/testimonials/r4.jpeg" alt="Review 3">
+        <img src="../public/testimonials/r5.jpeg" alt="Review 3">
+        <img src="../public/testimonials/r5.jpeg" alt="Review 3">
+        <!-- Add more review images as needed -->
       </div>
     </div>
-  </section>
-
-  <section class="testimonials">
-    <h2 class="section-title">What Our Customers Say</h2>
-    <div class="testimonial-slider">
-      <p>“Booked pest control for my 3BHK in DLF. The team was punctual and super professional. Highly recommend Fapico!”</p>
-      <strong>- Riya Malhotra, Sector 56</strong>
-    </div>
-  </section>
-
-  <section id="pricing">
-    <h2 class="section-title">Transparent Pricing</h2>
-    <div class="pricing">
-      <div class="price-card">
-        <h3>1 BHK</h3>
-        <p><strong>₹799</strong></p>
-        <ul>
-          <li>Cockroach & Ants</li>
-          <li>Eco-Safe Chemicals</li>
-          <li>30-day Warranty</li>
-        </ul>
+        <div class="more-reviews-btn-container">
+          <a href="https://www.google.com/search?client=ms-android-samsung-rvo1&sca_esv=c11b94e477694cad&hl=en-IN&cs=0&sxsrf=AE3TifNDE97wRC7HTwwmgWkMwkdAz-9r1w%3A1753704391659&kgmid=%2Fg%2F11xmgmpkmf&q=Fapico&shndl=30&source=sh%2Fx%2Floc%2Fact%2Fm1%2F4&kgs=c5451df2568d04e5" target="_blank" class="btn btn-more-reviews">
+            Read More Reviews <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
-      <div class="price-card">
-        <h3>2 BHK</h3>
-        <p><strong>₹999</strong></p>
-        <ul>
-          <li>Full House Spray</li>
-          <li>Rodent Control</li>
-          <li>Odorless Treatment</li>
-        </ul>
-      </div>
-      <div class="price-card">
-        <h3>Commercial</h3>
-        <p><strong>₹1499+</strong></p>
-        <ul>
-          <li>Shops/Offices</li>
-          <li>Custom Plans</li>
-          <li>Same-Day Service</li>
-        </ul>
+    </section>
+    <section class="locations-section">
+  <div class="container">
+    <h2 class="section-common--heading">Currently Serving</h2>
+    <div class="locations-scroll-wrapper">
+      <div class="locations-cards-container">
+        <div class="locations-card">
+          <img src="../public/locations/gurgaon.jpg" alt="Gurgaon Icon" class="locations-icon-img" />
+          <p class="locations-name">Gurgaon</p>
+        </div>
+        <div class="locations-card">
+          <img src="../public/locations/udaipur.jpg" alt="Udaipur Icon" class="locations-icon-img" />
+          <p class="locations-name">Udaipur</p>
+        </div>
+        <div class="locations-card">
+          <img src="../public/locations/jaipur.png" alt="Udaipur Icon" class="locations-icon-img" />
+          <p class="locations-name">Jaipur</p>
+        </div>
+        </div>
       </div>
     </div>
-    <div style="text-align:center; margin-top:30px;">
-      <a href="tel:+91XXXXXXXXXX" class="btn-primary">Call Now to Book</a>
+  </div>
+</section>
+
+<div class="sticky-book-bar">
+  <!-- <span class="price">₹4499</span> -->
+  <a href="https://wa.me/918700828054?text=I%20want%20to%20Book%20Pest%20control%20service" 
+   target="_blank" 
+   style="padding:10px 20px; border-radius:8px; text-decoration:none; font-family:'Poppins', sans-serif; font-weight:600; display:inline-block;">
+    <button>Book Now</button>
+  </a>
+  <a href="https://wa.me/918700828054?text=I%20want%20to%20get%20free%20pest%20control%20consultation" 
+   target="_blank" 
+   style="padding:10px 20px; border-radius:8px; text-decoration:none; font-family:'Poppins', sans-serif; font-weight:600; display:inline-block;">
+    <button>Get Free Consultation</button>
+  </a>
+  </div>
+
+    <footer class="section-footer">
+      <div class="footer-container container">
+    <div class="content_1">
+      <img src="../public/Images/Fapico.jpg" alt="logo" />
+      <p>
+        Welcome to Fapico, your ultimate destination<br>
+        for best pest control and cleaning services!
+      </p>
     </div>
-  </section>
+    <div class="content_2">
+      <h4>Services</h4>
+      <a href="./trending.html" target="_blank">Pest Control</a>
+      <a href="./trending.html" target="_blank">Commercial Pest Control</a>
+      <a href="./trending.html" target="_blank">Deep Cleaning</a>
+      <a href="./trending.html" target="_blank">House Cleaning</a>
+    </div>
+    <div class="content_3">
+      <h4>Experience</h4>
+      <a href="./contact.html" target="_blank">Contact Us</a>
+      <a href="https://www.linkedin.com/in/fapico-fapico-613aa3371/?originalSubdomain=in" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/fapico_/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/people/Fapico/61577772155917/#" target="_blank">Facebook</a>
+    </div>
+    <div class="content_4">
+      <h4>E-Mail</h4>
+      <p>Feel free to get in touch with us for<br />services, prices & bookings!</p>
+      <a href="mailto:contact@fapico.com">Email Us: contact@fapico.com</a>
+      <hr />
+    </div>
+  </div>
+  <div class="f-design">
+    <div class="f-design-txt">
+      <p>Fapico</p>
+    </div>
+  </div>
+    </footer>
 
-  <footer>
-    <p>© 2025 Fapico Pest Control, Gurgaon</p>
-    <p>Call: +91 XXXXX-XXXXX | Email: support@fapico.in</p>
-  </footer>
+    <script type="module" src="main.js"></script>
+    <script src="../slideshow.js"></script>
+    <script src="../navbarToggle.js"></script>
+    <script src="../clientSlideshow.js"></script>
+    <script>
+  const buttons = document.querySelectorAll('.fapico-mute-btn');
 
-</body>
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const video = btn.previousElementSibling;
+      video.muted = !video.muted;
+      btn.textContent = video.muted ? 'Unmute' : 'Mute';
+    });
+  });
+</script>
+
+  </body>
 </html>

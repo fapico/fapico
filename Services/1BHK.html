@@ -277,6 +277,14 @@
   background-color: #d8dafb;
 }
 
+.buttons a {
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none; /* removes underline */
+}
+
   </style>
 </head>
 <body>
@@ -302,8 +310,15 @@
 
     <div class="card card1">
   <div class="buttons">
-    <button class="call-btn"><i class="fas fa-phone-alt"></i> Call Us</button>
-    <button class="call-btn"><i class="fas fa-comments"></i> Free Consultation</button>
+
+    <a href="tel:+918700828054" target="_blank">
+      <button class="call-btn"><i class="fas fa-phone-alt"></i> Call Us</button>
+    </a>
+
+    <a href="https://wa.me/918700828054?text=Hii%21%20Fapico%2C%20I%20am%20interested%20in%20free%20consultation" target="_blank">
+      <button class="call-btn"><i class="fas fa-comments"></i> Free Consultation</button>
+    </a>
+    
   </div>
 </div>
 
@@ -332,7 +347,11 @@
   </div>
   <div class="sticky-book-bar">
   <span class="price">₹4499</span>
-  <button>Book Now</button>
+  <a href="https://wa.me/918700828054?text=I%20want%20to%20Book%20deep%20cleaning%20for%201BHK" 
+   target="_blank" 
+   style="padding:10px 20px; border-radius:8px; text-decoration:none; font-family:'Poppins', sans-serif; font-weight:600; display:inline-block;">
+    <button>Try Now</button>
+  </a>
   </div>
 </body>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

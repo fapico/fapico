@@ -172,7 +172,7 @@
 .locations-cards-container {
   display: flex;
   gap: 20px;
-  animation: locations-scroll-left 40s linear infinite;
+  animation: locations-scroll-left 5s linear infinite;
   width: max-content;
   padding: 10px 0;
 }
@@ -2234,6 +2234,80 @@ footer {
   background-color: #dfe1ff;
 }
 
+.pest-control-book-now {
+  background-color: #cdcdcd;
+}
 .locations-section{
   background-color: #dfe1ff;
 }
+
+/* Sticky Bar */
+.sticky-book-bar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3b3d42;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  z-index: 999;
+  border-radius: 12px 12px 0 0;
+  max-width: 900px; /* Matches container */
+  width: calc(100% - 40px); /* accounts for 20px padding each side */
+  box-sizing: border-box;
+}
+
+.sticky-book-bar .price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sticky-book-bar button {
+  background: white;
+  color: #535bf2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sticky-book-bar button:hover {
+  background: #e6e6ff;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .sticky-book-bar {
+    flex-direction: column;
+    gap: 2px;
+    padding: 0px;
+    width: calc(100% - 20px); /* smaller side padding */
+  }
+
+  .sticky-book-bar .price {
+    font-size: 16px;
+  }
+
+  .sticky-book-bar button {
+    width: 100%;
+  }
+}
+
+.price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+      .price-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
