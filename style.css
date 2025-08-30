@@ -1827,7 +1827,7 @@ footer {
 .client-logo-slideshow {
   display: flex;
   align-items: center;
-  animation: scrollLogos 25s linear infinite;
+  animation: scrollLogos 5s linear infinite;
   padding: 0 6rem; /* keeps 6rem margin on both sides */
   box-sizing: border-box;
 }
