@@ -520,7 +520,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
     </section> -->
-    <section class="section-testimonials">
+    <!-- <section class="section-testimonials">
       <div class="container">
         <h2 class="section-common--heading">What Our Customers Say</h2>
         <div class="card reviews">
@@ -532,7 +532,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <img src="public/testimonials/r5.jpeg" alt="Review 3">
         <img src="public/testimonials/r5.jpeg" alt="Review 3">
         <!-- Add more review images as needed -->
-      </div>
+      <!-- </div>
     </div>
         <div class="more-reviews-btn-container">
           <a href="https://www.google.com/search?client=ms-android-samsung-rvo1&sca_esv=c11b94e477694cad&hl=en-IN&cs=0&sxsrf=AE3TifNDE97wRC7HTwwmgWkMwkdAz-9r1w%3A1753704391659&kgmid=%2Fg%2F11xmgmpkmf&q=Fapico&shndl=30&source=sh%2Fx%2Floc%2Fact%2Fm1%2F4&kgs=c5451df2568d04e5" target="_blank" class="btn btn-more-reviews">
@@ -540,7 +540,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </a>
         </div>
       </div>
-    </section>
+    </section> --> 
+    <section class="section-testimonials">
+  <div class="container">
+    <h2 class="section-common--heading">What Our Customers Say</h2>
+
+    <div class="testimonial-scroll-wrapper">
+      <!-- Left Arrow -->
+      <button class="testimonial-scroll-arrow testimonial-left">&#10094;</button>
+
+      <!-- Scrollable Review Images -->
+      <div class="testimonial-scroll-container">
+        <img src="public/testimonials/r1.jpeg" alt="Review 1">
+        <img src="public/testimonials/r2.jpeg" alt="Review 2">
+        <img src="public/testimonials/r3.jpeg" alt="Review 3">
+        <img src="public/testimonials/r4.jpeg" alt="Review 4">
+      </div>
+
+      <!-- Right Arrow -->
+      <button class="testimonial-scroll-arrow testimonial-right">&#10095;</button>
+    </div>
+
+    <div class="more-reviews-btn-container">
+      <a href="https://www.google.com/search?q=Fapico+reviews" 
+         target="_blank" class="btn btn-more-reviews">
+        Read More Reviews <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+    
     <section class="locations-section">
   <div class="container">
     <h2 class="section-common--heading">Currently Serving</h2>
@@ -660,6 +690,19 @@ leftArrow.addEventListener('click', () => {
     });
   });
 </script>
+<script>
+  const testimonialContainer = document.querySelector('.testimonial-scroll-container');
+const testimonialLeft = document.querySelector('.testimonial-left');
+const testimonialRight = document.querySelector('.testimonial-right');
 
+testimonialRight.addEventListener('click', () => {
+  testimonialContainer.scrollBy({ left: 300, behavior: 'smooth' });
+});
+
+testimonialLeft.addEventListener('click', () => {
+  testimonialContainer.scrollBy({ left: -300, behavior: 'smooth' });
+});
+
+</script>
   </body>
 </html>

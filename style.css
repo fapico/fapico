@@ -2348,3 +2348,50 @@ footer {
 .right-arrow {
   right: 0;
 }
+
+/* Wrapper (keeps arrows aligned with scroller) */
+.testimonial-scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* The scrollable row */
+.testimonial-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  scrollbar-width: none; /* Firefox */
+}
+.testimonial-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* Images – natural size, no stretching */
+.testimonial-scroll-container img {
+  flex: 0 0 auto;  /* don't grow or shrink */
+  height: auto;
+  width: auto;
+  max-height: 350px; /* optional: cap very tall images */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Arrows */
+.testimonial-scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+.testimonial-left { left: 0; }
+.testimonial-right { right: 0; }
