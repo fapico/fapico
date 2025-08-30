@@ -127,7 +127,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </a>
   </div>
 </section> -->
-    <section class="fapico-service-scroll-section">
+    <!-- <section class="fapico-service-scroll-section">
       <h2 class="section-common--headings">Pest Control Services</h2>
   <div class="fapico-service-scroll-container">
     <a href="Services/cockroach_control.html">
@@ -161,8 +161,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
     </a>
   </div>
+</section> -->
 </section>
+
+<section class="fapico-service-scroll-section">
+  <h2 class="section-common--headings">Pest Control Services</h2>
+
+  <div class="fapico-service-wrapper">
+    <!-- Left Arrow -->
+    <button class="scroll-arrow left-arrow">&#10094;</button>
+
+    <!-- Scrollable Container -->
+    <div class="fapico-service-scroll-container">
+      <a href="Services/cockroach_control.html">
+        <div class="fapico-service-card">
+          <img src="Images/Icons/fapico_cockroach.png" alt="Cockroach Control">
+          <p>Cockroach Control</p>
+        </div>
+      </a>
+      <a href="Services/bad_bugs_control.html">
+        <div class="fapico-service-card">
+          <img src="Images/Icons/fapico_badbugs.png" alt="Bad Bugs Control">
+          <p>Bad Bugs Control</p>
+        </div>
+      </a>
+      <a href="Services/rodent_control.html">
+        <div class="fapico-service-card">
+          <img src="Images/Icons/fapico_rodent.png" alt="Rodent Control">
+          <p>Rodent Control</p>
+        </div>
+      </a>
+      <a href="Services/mole_control.html">
+        <div class="fapico-service-card">
+          <img src="Images/Icons/fapico_mole.png" alt="Mole Control">
+          <p>Mole Control</p>
+        </div>
+      </a>
+      <a href="Services/termite_extermination.html">
+        <div class="fapico-service-card">
+          <img src="Images/Icons/fapico_termite.png" alt="Termite Extermination">
+          <p>Termite Extermination</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Right Arrow -->
+    <button class="scroll-arrow right-arrow">&#10095;</button>
+  </div>
 </section>
+
 <!-- Ready to get Started? -->
     <!-- <section class="section-action-buttons">
       <div class="container grid grid-two--cols">
@@ -588,6 +635,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="slideshow.js"></script>
     <script src="navbarToggle.js"></script>
     <script src="clientSlideshow.js"></script>
+    <script>
+      const scrollContainer = document.querySelector('.fapico-service-scroll-container');
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+
+rightArrow.addEventListener('click', () => {
+  scrollContainer.scrollBy({ left: 200, behavior: 'smooth' });
+});
+
+leftArrow.addEventListener('click', () => {
+  scrollContainer.scrollBy({ left: -200, behavior: 'smooth' });
+});
+
+    </script>
     <script>
   const buttons = document.querySelectorAll('.fapico-mute-btn');
 

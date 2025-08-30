@@ -2311,3 +2311,40 @@ footer {
         align-items: flex-start;
       }
     }
+
+    .fapico-service-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.fapico-service-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+.fapico-service-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 0;
+}
+.right-arrow {
+  right: 0;
+}
